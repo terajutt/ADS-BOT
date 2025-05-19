@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: butter-ads-bot
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "bash start.sh"
+    envVars:
+      - key: DATABASE_URL
+        value: postgresql://neondb_owner:npg_DfFY1Gs4kTdr@ep-weathered-fire-a4kn9571-pooler.us-east-1.aws.neon.tech/neondb?sslmode=require
+      - key: BOT_TOKEN
+        value: 7507012945:AAGZTqk_OjTGh4Ut2HkJinwkL2g5hIH_raU
+      - key: ADMIN_ID
+        value: 6652452460
