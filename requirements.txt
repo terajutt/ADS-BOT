@@ -5,3 +5,4 @@ aiohttp
 asyncpg
 python-dotenv
 pyrogram
+psycopg2-binary
